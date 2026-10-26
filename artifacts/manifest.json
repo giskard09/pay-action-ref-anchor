@@ -1,0 +1,54 @@
+{
+  "action_ref": "f98d8e6285ee662db78dc5a58bad8f5480141c70af299c4594e7a497bbfbfdad",
+  "anchor_chain": "Base mainnet (chainId 8453)",
+  "anchor_ref_bytes32": "0xf98d8e6285ee662db78dc5a58bad8f5480141c70af299c4594e7a497bbfbfdad",
+  "anchor_registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "envelope": {
+    "action_ref": "f98d8e6285ee662db78dc5a58bad8f5480141c70af299c4594e7a497bbfbfdad",
+    "endpoint_path": "/v1/completions",
+    "generated_at_utc": "2026-10-26T15:00:00.000Z",
+    "hash_algo": "sha256",
+    "metering_digest": "8a8e6d50e5daeea0d31b409667fec4524b79e6d35ab8efbeec06df7f1182f7c3",
+    "packet_version": "1.0",
+    "preimage": {
+      "action_type": "pay.metered_completion",
+      "agent_id": "worked-example.pay-action-ref-anchor",
+      "scope": "mpp:channel:ch_7f3a9c",
+      "timestamp": "2026-10-26T15:00:00.000Z"
+    },
+    "preimage_format": "jcs-rfc8785-v1",
+    "result_digest": "c7e84494db293f680eef3716aca11fea82cdd82bce552a51c591f9130e11531a",
+    "settlement_policy_digest": "523bbe682beb0dd6009e781f80da8e64d0431495ad6432f732ce745b35faa605"
+  },
+  "fixture_id": "pay-metered-completion-worked-example",
+  "jcs_payload": "{\"action_type\":\"pay.metered_completion\",\"agent_id\":\"worked-example.pay-action-ref-anchor\",\"scope\":\"mpp:channel:ch_7f3a9c\",\"timestamp\":\"2026-10-26T15:00:00.000Z\"}",
+  "metering": {
+    "channel_id": "ch_7f3a9c",
+    "decimals": 6,
+    "endpoint_path": "/v1/completions",
+    "increments_base_units": [
+      120000,
+      95000,
+      140000
+    ],
+    "payer": "worked-example-payer"
+  },
+  "preimage": {
+    "action_type": "pay.metered_completion",
+    "agent_id": "worked-example.pay-action-ref-anchor",
+    "scope": "mpp:channel:ch_7f3a9c",
+    "timestamp": "2026-10-26T15:00:00.000Z"
+  },
+  "provenance": "Synthetic worked example. The shape is modeled on solana-foundation/pay's own public source: rust/crates/core/src/server/completion_stream.rs (MeteredSettlement, MeteredState.committed_usd: Mutex<f64>, single-shot callback fired on Drop with the final committed total) and rust/crates/core/src/server/payment.rs (TrustedPaymentIdentity.channel_id; payment_middleware's tracing span declares tx_sig/receipt_url fields). NOT captured from a running pay proxy instance or a real MPP/x402 settlement. result.tx_sig_placeholder and receipt_url_placeholder are not real. No claim that pay emits action_ref today, and no claim of integration, adoption, or endorsement by solana-foundation/pay.",
+  "result": {
+    "committed_usd": "0.355000",
+    "receipt_url_placeholder": "https://example.invalid/receipts/synthetic",
+    "status": "settled",
+    "tx_sig_placeholder": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "settlement_policy": {
+    "auth_scheme": "mpp",
+    "payment_policy": "per_request_metered"
+  },
+  "spec": "action-ref-v1 (argentum-core, docs/spec/action-ref.md)"
+}
