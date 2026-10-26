@@ -2,7 +2,7 @@
 
 A worked example that derives an **`action_ref`** — a deterministic,
 content-addressed identifier for an agent action
-([`action-ref-v1`](https://github.com/giskard09/argentum-core/blob/master/docs/spec/action-ref.md)) —
+([`action-ref-v1`](https://github.com/giskard09/argentum-core/blob/main/docs/spec/action-ref.md)) —
 for a synthetic **solana-foundation/pay** metered completion, and anchors it
 permissionlessly on-chain, giving it a property the call itself does not
 have on its own: an **externally verifiable, third-party-checkable record of

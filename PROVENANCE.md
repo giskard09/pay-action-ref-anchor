@@ -7,7 +7,7 @@ provenance is fuzzy.
 ## What is real
 
 - `action_ref` is derived exactly per `action-ref-v1`
-  ([argentum-core/docs/spec/action-ref.md](https://github.com/giskard09/argentum-core/blob/master/docs/spec/action-ref.md)):
+  ([argentum-core/docs/spec/action-ref.md](https://github.com/giskard09/argentum-core/blob/main/docs/spec/action-ref.md)):
   SHA-256 of the RFC 8785 JCS canonicalization of the four preimage fields
   (`agent_id`, `action_type`, `scope`, `timestamp`). The value in
   `artifacts/manifest.json` was independently cross-checked against
