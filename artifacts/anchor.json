@@ -1,0 +1,13 @@
+{
+  "description": "On-chain anchor of the action_ref produced in this repo.",
+  "provenance_disclaimer": "The anchored ref is action_ref derived per action-ref-v1 for a synthetic pay metered-completion call modeled on solana-foundation/pay's public source (completion_stream.rs, payment.rs). NOT produced by a running pay instance; no adoption or endorsement by solana-foundation/pay is implied.",
+  "anchor_ref_bytes32": "0xf98d8e6285ee662db78dc5a58bad8f5480141c70af299c4594e7a497bbfbfdad",
+  "registry": "0x49fEcA52bC634a9Ab773226D16619deC547794aa",
+  "chain": "Base mainnet (chainId 8453)",
+  "function": "anchor(bytes32)",
+  "event": "Anchored(bytes32 indexed ref, address indexed anchoredBy, uint256 timestamp)",
+  "tx": "0x9f894fad8b0a3d172c26cc16b02233a5ec506d13e4ab92fb32fd0d33cdd9838c",
+  "block": 53117244,
+  "anchored_by": "Rama operator wallet",
+  "anchored_at_utc": "2026-10-26T14:10:35Z"
+}
